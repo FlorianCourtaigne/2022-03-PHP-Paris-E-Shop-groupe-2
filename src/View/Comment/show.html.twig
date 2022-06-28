@@ -2,6 +2,8 @@
 
 {% block content %}
     <h1>Informations du commentaire : {{ comment.comment }}</h1>
+    <p>{{ comment.user_id }}</p>
+    <p>{{ comment.created_at }}</p>
     <p>{{ comment.id }}. {{ comment.comment }}</p>
     <p>{{ comment.id }}. {{ comment.created_at|date('d/m/Y') }}</p>
     <a href="/comments/edit?id={{ comment.id }}">Edit</a>
